@@ -10,7 +10,7 @@ class Favorite extends Model
     public function user(){
         return $this->belongsTo(User::class);
     }
-    public function playGround(){
+    public function playground(){
         return $this->belongsTo(PlayGround::class);
     }
 }

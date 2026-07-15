@@ -17,6 +17,7 @@ return new class extends Migration
             $table->foreignId('play_ground_id')->constrained('play_grounds')->cascadeOnDelete();
             $table->foreignId('booking_id')->constrained('bookings')->cascadeOnDelete();
             $table->string('comment');
+            $table->integer('rating');
             $table->timestamps();
         });
     }

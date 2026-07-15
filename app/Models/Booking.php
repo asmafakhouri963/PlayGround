@@ -22,7 +22,7 @@ class Booking extends Model
     {
         return $this->hasMany(Review::class);
     }
-    public function playGround(){
+    public function playground(){
         return $this->belongsTo(PlayGround::class);
     }
     public function user(){
